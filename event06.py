@@ -1,9 +1,8 @@
 from secp256k1 import PrivateKey, PublicKey 
+from websockets.sync.client import connect
 import time
 import json
 import hashlib
-""" import asyncio """
-from websockets.sync.client import connect
 
 #chave privada
 chave_privada_obj = PrivateKey(bytes.fromhex("a4fef14e375d7d7726851120afbed7755a668011aa136190944ba31d9abfcd68"))
