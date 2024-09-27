@@ -5,7 +5,9 @@ from keyPair import KeyPair
 from event import Event
 from relayPool import RelayPool
 
-relayPool = RelayPool()
+relayPool = RelayPool([
+       "wss://relay.damus.io"
+    ])
 
 keyPair = KeyPair("b2776165d40acc349ad1f7f11105b037a3403971ee1be87787b47b407b6eb77f")
 

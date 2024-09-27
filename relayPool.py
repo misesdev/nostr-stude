@@ -3,8 +3,9 @@ from websockets.sync.client import connect
 
 class RelayPool:
 
-    def __init__(self, subscription = "5830625b2fff8d359295"):
+    def __init__(self, relays, subscription = "5830625b2fff8d359295"):
         self.subscription = subscription
+        self.relays = relays
 
     def fetchEvents(self, author: str, kind: int, limit: int):
         
